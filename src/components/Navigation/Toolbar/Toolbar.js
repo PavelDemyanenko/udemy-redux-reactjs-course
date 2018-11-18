@@ -6,9 +6,12 @@ import classes from './Toolbar.css'
 
 const toolbar = props => (
   <header className={classes.Toolbar}>
-    <NavigationsItems />
-    <Logo />
-    <nav />
+    <div className={classes.Logo}>
+      <Logo />
+    </div>
+    <nav>
+      <NavigationsItems />
+    </nav>
   </header>
 )
 
